@@ -1,0 +1,15 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../procesador.srcs/sources_1/imports/procesador/alu.vhd" \
+"../../../../procesador.srcs/sources_1/imports/procesador/control.vhd" \
+"../../../../procesador.srcs/sources_1/imports/procesador/datapath.vhd" \
+"../../../../procesador.srcs/sources_1/imports/procesador/decodificador.vhd" \
+"../../../../procesador.srcs/sources_1/imports/procesador/memory_data.vhd" \
+"../../../../procesador.srcs/sources_1/imports/procesador/memory_program.vhd" \
+"../../../../procesador.srcs/sources_1/imports/procesador/pc.vhd" \
+"../../../../procesador.srcs/sources_1/imports/procesador/registro.vhd" \
+"../../../../procesador.srcs/sources_1/imports/procesador/registros.vhd" \
+"../../../../procesador.srcs/sim_1/imports/procesador/testbench.vhd" \
+
+# Do not sort compile order
+nosort
