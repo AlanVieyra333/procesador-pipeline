@@ -1,4 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/developer/Develop/Cinvestav/Arqui/procesador/procesador.srcs/sources_1/imports/procesador/control.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'CONTROL'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/developer/Develop/Cinvestav/Arqui/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
