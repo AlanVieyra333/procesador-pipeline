@@ -15,7 +15,6 @@ ENTITY CONTROL IS
     );
     PORT (
         INST_OPE : IN STD_LOGIC_VECTOR (INST_OPE_LENGTH - 1 DOWNTO 0);
-        Z : IN STD_LOGIC; -- Bandera de ALU (Z - isZero)
         RST, CLK : IN STD_LOGIC;
         PC_ENABLE, PC_WE : OUT STD_LOGIC;
         REG_WE : OUT STD_LOGIC;
@@ -28,7 +27,7 @@ ENTITY CONTROL IS
 END CONTROL;
 
 ARCHITECTURE Behavioral OF CONTROL IS
-    TYPE STATE IS (Qrst, Qini, Q_end, Q_LW, Q_BNEI);
+    TYPE STATE IS (Qrst, Qini, Q_end, Q_LW);
     SIGNAL STATE_CURRENT, STATE_NEXT : STATE;
 BEGIN
 
@@ -112,9 +111,7 @@ BEGIN
                     	REG_I_DATA_SEL <= "01"; -- Gurdar en registro el dato de ALU.
                     WHEN "01010" => -- BNEI Rd, Rt, D - if(Rd != Rt) goto D
                     	ALU_OPE <= "001";
-                    	
-                    	PC_ENABLE <= '0';      -- Desactivar PC.
-                    	STATE_NEXT <= Q_BNEI;
+                    	PC_WE <= '1';
                     WHEN OTHERS => -- END
                     	-- NOTHING.
                     	PC_ENABLE <= '0';      -- Desactivar PC.
@@ -123,14 +120,6 @@ BEGIN
             WHEN Q_LW =>
                 REG_I_DATA_SEL <= "10"; -- Gurdar en registro el dato de memoria.
                 REG_WE <= '1';
-                
-                PC_ENABLE <= '1';      -- Activar PC.
-                STATE_NEXT <= Qini;
-            WHEN Q_BNEI =>
-                -- Validar que la bandera Z sea 1.
-                IF Z = '1' THEN
-                    PC_WE <= '1';
-                END IF;
                 
                 PC_ENABLE <= '1';      -- Activar PC.
                 STATE_NEXT <= Qini;

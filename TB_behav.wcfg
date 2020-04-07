@@ -10,9 +10,9 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="341883fs"></ZoomStartTime>
-      <ZoomEndTime time="351624fs"></ZoomEndTime>
-      <Cursor1Time time="349743fs"></Cursor1Time>
+      <ZoomStartTime time="310320fs"></ZoomStartTime>
+      <ZoomEndTime time="320061fs"></ZoomEndTime>
+      <Cursor1Time time="320000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="165"></NameColumnWidth>
