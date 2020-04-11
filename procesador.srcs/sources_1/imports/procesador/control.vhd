@@ -27,7 +27,7 @@ ENTITY CONTROL IS
 END CONTROL;
 
 ARCHITECTURE Behavioral OF CONTROL IS
-    TYPE STATE IS (Qrst, Qini, Q_LW);
+    TYPE STATE IS (Qrst, Qini);
     SIGNAL STATE_CURRENT, STATE_NEXT : STATE;
 BEGIN
 
@@ -115,15 +115,12 @@ BEGIN
                     WHEN "01010" => -- BNEI Rd, Rt, D - if(Rd != Rt) goto D
                     	ALU_OPE <= "001";
                     	PC_WE <= '1';
+                    WHEN "01011" => -- B D - goto D
+                    	ALU_OPE <= "000";
+                    	PC_WE <= '1';
                     WHEN OTHERS => -- NOP
                     	-- NOTHING.
             	END CASE;
-            WHEN Q_LW =>
-                REG_I_DATA_SEL <= "10"; -- Gurdar en registro el dato de memoria.
-                REG_WE <= '1';
-                
-                PC_ENABLE <= '1';      -- Activar PC.
-                STATE_NEXT <= Qini;
             WHEN OTHERS =>
         END CASE;
     END PROCESS;

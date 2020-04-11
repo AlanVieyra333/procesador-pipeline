@@ -16,7 +16,7 @@ END MEMORY_PROG;
 
 ARCHITECTURE Behavioral OF MEMORY_PROG IS
     TYPE MEM_T IS ARRAY (0 TO MEM_SIZE) OF STD_LOGIC_VECTOR(WORD_LENGTH - 1 DOWNTO 0);
-    SIGNAL DATA : MEM_T := (OTHERS => (OTHERS => '0'));
+    SIGNAL DATA : MEM_T := (OTHERS => (OTHERS => '1'));
 BEGIN
     -- Matriz A 5x1 {1,2,3,4,5}
     DATA(0) <= "00000" & "00000" & x"00000001"; -- LWI R0, #1
@@ -103,9 +103,11 @@ BEGIN
     DATA(54) <= (OTHERS => '1'); -- STALL
     DATA(55) <= (OTHERS => '1'); -- STALL
     DATA(56)(WORD_LENGTH - 1 DOWNTO WORD_LENGTH - 30) <= "01010" & "00000" & "00011" & "00010" & "1111011110"; -- BNEI R3, R2, -34 //22 (MULT-MATRIZ-1)
-
-    DATA(57) <= (OTHERS => '1'); -- NOP
-
+    DATA(57) <= (OTHERS => '1'); -- STALL
+    DATA(58) <= (OTHERS => '1'); -- STALL
+    DATA(59) <= (OTHERS => '1'); -- NOP
+    DATA(60)(WORD_LENGTH - 1 DOWNTO WORD_LENGTH - 30) <= "01011" & "00000" & "00000" & "00000" & "1111111111"; -- B -1
+    
     MEM_LOAD : PROCESS (DIR)
     BEGIN
         O_DATA <= DATA(to_integer(unsigned(DIR)));
