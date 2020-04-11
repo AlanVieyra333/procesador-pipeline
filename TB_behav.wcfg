@@ -10,15 +10,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="19561fs"></ZoomEndTime>
-      <Cursor1Time time="4000fs"></Cursor1Time>
+      <ZoomStartTime time="25720000fs"></ZoomStartTime>
+      <ZoomEndTime time="39400001fs"></ZoomEndTime>
+      <Cursor1Time time="31000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="165"></NameColumnWidth>
-      <ValueColumnWidth column_width="106"></ValueColumnWidth>
+      <ValueColumnWidth column_width="94"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="19" />
+   <WVObjectSize size="18" />
    <wvobject type="logic" fp_name="/TB/CLK">
       <obj_property name="ElementShortName">CLK</obj_property>
       <obj_property name="ObjectShortName">CLK</obj_property>
@@ -68,25 +68,23 @@
       <obj_property name="ObjectShortName">P_IF_PC_DIR[9:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/TB/DATA_PATH/P_ID_REG_WE">
-      <obj_property name="ElementShortName">P_ID_REG_WE[0:0]</obj_property>
-      <obj_property name="ObjectShortName">P_ID_REG_WE[0:0]</obj_property>
+   <wvobject type="array" fp_name="/TB/DATA_PATH/P_MEM_MEM_DATA_WE">
+      <obj_property name="ElementShortName">P_MEM_MEM_DATA_WE[0:0]</obj_property>
+      <obj_property name="ObjectShortName">P_MEM_MEM_DATA_WE[0:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/TB/DATA_PATH/P_EX_REG_WE">
-      <obj_property name="ElementShortName">P_EX_REG_WE[0:0]</obj_property>
-      <obj_property name="ObjectShortName">P_EX_REG_WE[0:0]</obj_property>
+   <wvobject type="array" fp_name="/TB/DATA_PATH/MEM_DIR">
+      <obj_property name="ElementShortName">MEM_DIR[9:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM_DIR[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/TB/DATA_PATH/P_MEM_REG_WE">
-      <obj_property name="ElementShortName">P_MEM_REG_WE[0:0]</obj_property>
-      <obj_property name="ObjectShortName">P_MEM_REG_WE[0:0]</obj_property>
+   <wvobject type="array" fp_name="/TB/DATA_PATH/P_MEM_REG_DATA_R2">
+      <obj_property name="ElementShortName">P_MEM_REG_DATA_R2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">P_MEM_REG_DATA_R2[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/TB/DATA_PATH/P_WB_REG_WE">
-      <obj_property name="ElementShortName">P_WB_REG_WE[0:0]</obj_property>
-      <obj_property name="ObjectShortName">P_WB_REG_WE[0:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/TB/DATA_PATH/REG_I_DATA">
-      <obj_property name="ElementShortName">REG_I_DATA[31:0]</obj_property>
-      <obj_property name="ObjectShortName">REG_I_DATA[31:0]</obj_property>
+   <wvobject type="array" fp_name="/TB/DATA_PATH/P_MEM_MEM_DATA_O">
+      <obj_property name="ElementShortName">P_MEM_MEM_DATA_O[31:0]</obj_property>
+      <obj_property name="ObjectShortName">P_MEM_MEM_DATA_O[31:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="group" fp_name="group20">
@@ -94,32 +92,53 @@
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="isExpanded"></obj_property>
       <wvobject type="array" fp_name="/TB/DATA_PATH/REG/\MEM_REG(0)\/REGX/Q">
+         <obj_property name="DisplayName">label</obj_property>
          <obj_property name="ElementShortName">Q[31:0]</obj_property>
          <obj_property name="ObjectShortName">Q[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="label">R0</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/REG/\MEM_REG(1)\/REGX/Q">
+         <obj_property name="DisplayName">label</obj_property>
          <obj_property name="ElementShortName">Q[31:0]</obj_property>
          <obj_property name="ObjectShortName">Q[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="label">R1</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/REG/\MEM_REG(2)\/REGX/Q">
+         <obj_property name="DisplayName">label</obj_property>
          <obj_property name="ElementShortName">Q[31:0]</obj_property>
          <obj_property name="ObjectShortName">Q[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="label">R2</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/REG/\MEM_REG(3)\/REGX/Q">
+         <obj_property name="DisplayName">label</obj_property>
          <obj_property name="ElementShortName">Q[31:0]</obj_property>
          <obj_property name="ObjectShortName">Q[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="label">R3</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/REG/\MEM_REG(4)\/REGX/Q">
+         <obj_property name="DisplayName">label</obj_property>
          <obj_property name="ElementShortName">Q[31:0]</obj_property>
          <obj_property name="ObjectShortName">Q[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="label">R4</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/REG/\MEM_REG(5)\/REGX/Q">
+         <obj_property name="DisplayName">label</obj_property>
          <obj_property name="ElementShortName">Q[31:0]</obj_property>
          <obj_property name="ObjectShortName">Q[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="label">R5</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/REG/\MEM_REG(6)\/REGX/Q">
+         <obj_property name="DisplayName">label</obj_property>
          <obj_property name="ElementShortName">Q[31:0]</obj_property>
          <obj_property name="ObjectShortName">Q[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="label">R6</obj_property>
       </wvobject>
    </wvobject>
    <wvobject type="array" fp_name="/TB/DATA_PATH/RAM/DATA">

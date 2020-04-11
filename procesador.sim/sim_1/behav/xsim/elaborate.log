@@ -1,0 +1,34 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto 980cf461ad6e4bab8160b3debaaae233 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot TB_behav xil_defaultlib.TB -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.REGISTRO [\REGISTRO(length=10)\]
+Compiling architecture behavioral of entity xil_defaultlib.PC [pc_default]
+Compiling architecture behavioral of entity xil_defaultlib.MEMORY_PROG [memory_prog_default]
+Compiling architecture behavioral of entity xil_defaultlib.REGISTRO [\REGISTRO(length=42)\]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [\ALU(length=10)\]
+Compiling architecture behavioral of entity xil_defaultlib.REGISTRO [registro_default]
+Compiling architecture behavioral of entity xil_defaultlib.DECODIFICADOR [\DECODIFICADOR(enc_length=5,dec_...]
+Compiling architecture behavioral of entity xil_defaultlib.REGISTROS [registros_default]
+Compiling architecture behavioral of entity xil_defaultlib.REGISTRO [\REGISTRO(length=5)\]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.REGISTRO [\REGISTRO(length=1)\]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL [control_default]
+Compiling architecture behavioral of entity xil_defaultlib.REGISTRO [\REGISTRO(length=3)\]
+Compiling architecture behavioral of entity xil_defaultlib.REGISTRO [\REGISTRO(length=2)\]
+Compiling architecture behavioral of entity xil_defaultlib.MEMORY_DATA [\MEMORY_DATA(word_length=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.DATAPATH [datapath_default]
+Compiling architecture bev of entity xil_defaultlib.tb
+Built simulation snapshot TB_behav

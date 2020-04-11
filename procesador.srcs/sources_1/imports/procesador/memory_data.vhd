@@ -22,11 +22,11 @@ ARCHITECTURE Behavioral OF MEMORY_DATA IS
     SIGNAL DATA : MEM_T := (others => (others => '0'));
 BEGIN
 
-    MEM_LOAD : PROCESS (CLK, RST)
+    MEM_LOAD : PROCESS (RST, DIR, WE)
     BEGIN
         IF RST = '1' THEN
             DATA <= (others => (others => '0'));
-        ELSIF rising_edge(CLK) THEN
+        ELSE
             O_DATA <= DATA(to_integer(unsigned(DIR)));
 
             IF WE = '1' THEN

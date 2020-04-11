@@ -1,0 +1,28 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY REGISTRO_ASYNC IS
+    GENERIC (
+        LENGTH : NATURAL := 32
+    );
+    PORT (
+        I_DATA : IN STD_LOGIC_VECTOR (LENGTH - 1 DOWNTO 0);
+        RST, WE : IN STD_LOGIC;
+        O_DATA : OUT STD_LOGIC_VECTOR (LENGTH - 1 DOWNTO 0)
+    );
+END REGISTRO_ASYNC;
+
+ARCHITECTURE Behavioral OF REGISTRO_ASYNC IS
+    SIGNAL Q : STD_LOGIC_VECTOR (LENGTH - 1 DOWNTO 0);
+BEGIN
+    O_DATA <= Q;
+
+    FLIP_FLOP : PROCESS (RST, WE)
+    BEGIN
+        IF RST = '1' THEN
+            Q <= (OTHERS => '0');
+        ELSIF WE = '1' THEN
+            Q <= I_DATA;
+        END IF;
+    END PROCESS;
+END Behavioral;

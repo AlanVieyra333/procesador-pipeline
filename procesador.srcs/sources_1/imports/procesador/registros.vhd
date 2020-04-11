@@ -24,7 +24,7 @@ ARCHITECTURE Behavioral OF REGISTROS IS
         );
         PORT (
             I_DATA : IN STD_LOGIC_VECTOR (LENGTH - 1 DOWNTO 0);
-            CLK, RST, WE : IN STD_LOGIC;
+            clk, RST, WE : IN STD_LOGIC;
             O_DATA : OUT STD_LOGIC_VECTOR (LENGTH - 1 DOWNTO 0)
         );
     END COMPONENT;
@@ -60,7 +60,7 @@ BEGIN
     FOR I IN 0 TO REG_SIZE - 1 GENERATE
         REGX : REGISTRO
         GENERIC MAP(WORD_LENGTH)
-        PORT MAP(I_DATA, CLK, RST, REG_WE(I), REG_O_DATA(I));
+        PORT MAP(I_DATA, clk, RST, REG_WE(I), REG_O_DATA(I));
     END GENERATE MEM_REG;
 
     -- Output R1 (MUX)

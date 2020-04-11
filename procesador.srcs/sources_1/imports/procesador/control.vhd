@@ -27,7 +27,7 @@ ENTITY CONTROL IS
 END CONTROL;
 
 ARCHITECTURE Behavioral OF CONTROL IS
-    TYPE STATE IS (Qrst, Qini, Q_end, Q_LW);
+    TYPE STATE IS (Qrst, Qini, Q_LW);
     SIGNAL STATE_CURRENT, STATE_NEXT : STATE;
 BEGIN
 
@@ -77,8 +77,11 @@ BEGIN
                     	ALU_OPE <= "000";
                     	MEM_DIR_SEL <= '1';     -- Elegir la direccion de memoria de ALU.
                         
-                        PC_ENABLE <= '0';      -- Desactivar PC.
-                    	STATE_NEXT <= Q_LW;
+                        REG_I_DATA_SEL <= "10"; -- Gurdar en registro el dato de memoria.
+                        REG_WE <= '1';
+                        
+                        --PC_ENABLE <= '0';      -- Desactivar PC.
+                    	--STATE_NEXT <= Q_LW;
                     WHEN "00010" => -- SWI - Mem[D] = Rd
                     	MEMORY_DATA_WE <= '1';
                     WHEN "00011" => -- ADD
@@ -112,10 +115,8 @@ BEGIN
                     WHEN "01010" => -- BNEI Rd, Rt, D - if(Rd != Rt) goto D
                     	ALU_OPE <= "001";
                     	PC_WE <= '1';
-                    WHEN OTHERS => -- END
+                    WHEN OTHERS => -- NOP
                     	-- NOTHING.
-                    	PC_ENABLE <= '0';      -- Desactivar PC.
-                    	STATE_NEXT <= Q_end;
             	END CASE;
             WHEN Q_LW =>
                 REG_I_DATA_SEL <= "10"; -- Gurdar en registro el dato de memoria.
@@ -123,8 +124,6 @@ BEGIN
                 
                 PC_ENABLE <= '1';      -- Activar PC.
                 STATE_NEXT <= Qini;
-            WHEN Q_end =>
-            	STATE_NEXT <= Q_end;
             WHEN OTHERS =>
         END CASE;
     END PROCESS;
