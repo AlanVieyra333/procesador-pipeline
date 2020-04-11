@@ -57,43 +57,54 @@ BEGIN
     -- sum = A[i] * B[j];
     -- R0 = Mem[R3 + 0]
     DATA(23) <= (OTHERS => '1'); -- STALL
-    DATA(24)(WORD_LENGTH - 1 DOWNTO WORD_LENGTH - 30) <= "00001" & "00000" & "00011" & "00000" & "0000000000"; -- LW R0, 0(R3)
+    DATA(24) <= (OTHERS => '1'); -- STALL
+    DATA(25)(WORD_LENGTH - 1 DOWNTO WORD_LENGTH - 30) <= "00001" & "00000" & "00011" & "00000" & "0000000000"; -- LW R0, 0(R3)
     -- R1 = Mem[R4 + 5]
-    DATA(25)(WORD_LENGTH - 1 DOWNTO WORD_LENGTH - 30) <= "00001" & "00001" & "00100" & "00000" & "0000000101"; -- LW R1, 5(R4)
+    DATA(26)(WORD_LENGTH - 1 DOWNTO WORD_LENGTH - 30) <= "00001" & "00001" & "00100" & "00000" & "0000000101"; -- LW R1, 5(R4)
     -- R5 = R0 * R1
-    DATA(26) <= (OTHERS => '1'); -- STALL
     DATA(27) <= (OTHERS => '1'); -- STALL
-    DATA(28)(WORD_LENGTH - 1 DOWNTO WORD_LENGTH - 20) <= "00111" & "00101" & "00000" & "00001"; -- MUL R5, R0, R1
+    DATA(28) <= (OTHERS => '1'); -- STALL
+    DATA(29) <= (OTHERS => '1'); -- STALL
+    DATA(30)(WORD_LENGTH - 1 DOWNTO WORD_LENGTH - 20) <= "00111" & "00101" & "00000" & "00001"; -- MUL R5, R0, R1
 
     -- result[i*5 + j] = sum;
     -- R0 = 5
-    DATA(29) <= "00000" & "00000" & x"00000005"; -- LWI R0, #5
+    DATA(31) <= "00000" & "00000" & x"00000005"; -- LWI R0, #5
     -- R0 = R3 * R0
-    DATA(30) <= (OTHERS => '1'); -- STALL
-    DATA(31) <= (OTHERS => '1'); -- STALL
-    DATA(32)(WORD_LENGTH - 1 DOWNTO WORD_LENGTH - 20) <= "00111" & "00000" & "00011" & "00000"; -- MUL R0, R3, R0
-    -- R6 = R0 + R4
+    DATA(32) <= (OTHERS => '1'); -- STALL
     DATA(33) <= (OTHERS => '1'); -- STALL
     DATA(34) <= (OTHERS => '1'); -- STALL
-    DATA(35)(WORD_LENGTH - 1 DOWNTO WORD_LENGTH - 20) <= "00011" & "01000" & "00000" & "00100"; -- ADD R6, R0, R4
-    -- Mem[10 + R6] = R5
+    DATA(35)(WORD_LENGTH - 1 DOWNTO WORD_LENGTH - 20) <= "00111" & "00000" & "00011" & "00000"; -- MUL R0, R3, R0
+    -- R6 = R0 + R4
     DATA(36) <= (OTHERS => '1'); -- STALL
     DATA(37) <= (OTHERS => '1'); -- STALL
-    DATA(38)(WORD_LENGTH - 1 DOWNTO WORD_LENGTH - 30) <= "01000" & "00000" & "01000" & "00101" & "0000001010"; -- SW R5, 10(R6)
-
-    -- R4 = R4 + 1
-    DATA(39)(WORD_LENGTH - 1 DOWNTO WORD_LENGTH - 15) <= "01001" & "00100" & "00100"; -- INC R4, R4
-    -- if(R4 != R2) MULT-MATRIZ-2
-    DATA(40)(WORD_LENGTH - 1 DOWNTO WORD_LENGTH - 30) <= "01010" & "00000" & "00100" & "00010" & "1111101111"; -- BNEI R4, R2, -17 //23 (MULT-MATRIZ-2)
+    DATA(38) <= (OTHERS => '1'); -- STALL
+    DATA(39)(WORD_LENGTH - 1 DOWNTO WORD_LENGTH - 20) <= "00011" & "01000" & "00000" & "00100"; -- ADD R6, R0, R4
+    -- Mem[10 + R6] = R5
+    DATA(40) <= (OTHERS => '1'); -- STALL
     DATA(41) <= (OTHERS => '1'); -- STALL
     DATA(42) <= (OTHERS => '1'); -- STALL
-    DATA(43) <= (OTHERS => '1'); -- STALL
-    -- R3 = R3 + 1
-    DATA(44)(WORD_LENGTH - 1 DOWNTO WORD_LENGTH - 15) <= "01001" & "00011" & "00011"; -- INC R3, R3
-    -- if(R3 != R2) MULT-MATRIZ-1
-    DATA(45)(WORD_LENGTH - 1 DOWNTO WORD_LENGTH - 30) <= "01010" & "00000" & "00011" & "00010" & "1111101001"; -- BNEI R3, R2, -23 //22 (MULT-MATRIZ-1)
+    DATA(43)(WORD_LENGTH - 1 DOWNTO WORD_LENGTH - 30) <= "01000" & "00000" & "01000" & "00101" & "0000001010"; -- SW R5, 10(R6)
 
-    DATA(46) <= (OTHERS => '1'); -- NOP
+    -- R4 = R4 + 1
+    DATA(44)(WORD_LENGTH - 1 DOWNTO WORD_LENGTH - 15) <= "01001" & "00100" & "00100"; -- INC R4, R4
+    -- if(R4 != R2) MULT-MATRIZ-2
+    DATA(45) <= (OTHERS => '1'); -- STALL
+    DATA(46) <= (OTHERS => '1'); -- STALL
+    DATA(47) <= (OTHERS => '1'); -- STALL
+    DATA(48)(WORD_LENGTH - 1 DOWNTO WORD_LENGTH - 30) <= "01010" & "00000" & "00100" & "00010" & "1111101001"; -- BNEI R4, R2, -23 //25 (MULT-MATRIZ-2)
+    DATA(49) <= (OTHERS => '1'); -- STALL
+    DATA(50) <= (OTHERS => '1'); -- STALL
+    DATA(51) <= (OTHERS => '1'); -- STALL
+    -- R3 = R3 + 1
+    DATA(52)(WORD_LENGTH - 1 DOWNTO WORD_LENGTH - 15) <= "01001" & "00011" & "00011"; -- INC R3, R3
+    -- if(R3 != R2) MULT-MATRIZ-1
+    DATA(53) <= (OTHERS => '1'); -- STALL
+    DATA(54) <= (OTHERS => '1'); -- STALL
+    DATA(55) <= (OTHERS => '1'); -- STALL
+    DATA(56)(WORD_LENGTH - 1 DOWNTO WORD_LENGTH - 30) <= "01010" & "00000" & "00011" & "00010" & "1111011110"; -- BNEI R3, R2, -34 //22 (MULT-MATRIZ-1)
+
+    DATA(57) <= (OTHERS => '1'); -- NOP
 
     MEM_LOAD : PROCESS (DIR)
     BEGIN

@@ -18,13 +18,13 @@ ENTITY REGISTROS IS
 END REGISTROS;
 
 ARCHITECTURE Behavioral OF REGISTROS IS
-    COMPONENT REGISTRO IS
+    COMPONENT REGISTRO_ASYNC IS
         GENERIC (
             LENGTH : NATURAL := 32
         );
         PORT (
             I_DATA : IN STD_LOGIC_VECTOR (LENGTH - 1 DOWNTO 0);
-            clk, RST, WE : IN STD_LOGIC;
+            RST, WE : IN STD_LOGIC;
             O_DATA : OUT STD_LOGIC_VECTOR (LENGTH - 1 DOWNTO 0)
         );
     END COMPONENT;
@@ -58,9 +58,9 @@ BEGIN
     -- Registros.
     MEM_REG :
     FOR I IN 0 TO REG_SIZE - 1 GENERATE
-        REGX : REGISTRO
+        REGX : REGISTRO_ASYNC
         GENERIC MAP(WORD_LENGTH)
-        PORT MAP(I_DATA, clk, RST, REG_WE(I), REG_O_DATA(I));
+        PORT MAP(I_DATA, RST, REG_WE(I), REG_O_DATA(I));
     END GENERATE MEM_REG;
 
     -- Output R1 (MUX)
