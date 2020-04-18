@@ -118,6 +118,14 @@ BEGIN
                     WHEN "01011" => -- B D - goto D
                     	ALU_OPE <= "000";
                     	PC_WE <= '1';
+                    WHEN "01100" => -- XOR
+                    	ALU_OPE <= "100";
+                    	REG_WE <= '1';
+                    	REG_I_DATA_SEL <= "01";
+                    WHEN "01101" => -- NOT
+                    	ALU_OPE <= "111";
+                    	REG_WE <= '1';
+                    	REG_I_DATA_SEL <= "01";
                     WHEN OTHERS => -- NOP
                     	-- NOTHING.
             	END CASE;

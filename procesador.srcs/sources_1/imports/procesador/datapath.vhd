@@ -206,7 +206,7 @@ BEGIN
 
     -- OK
     -- AND: Ativar PC_WE si la bandera Zero de la ALU se activa y la instruccion es jump.
-    PC_WE <= PC_JUMP(0) AND Z;
+    PC_WE <= PC_JUMP(0) AND not Z;
 
     -- OK
     PROGRAM_MEMORY : MEMORY_PROG GENERIC MAP(INSTRUCTION_LENGTH, MEM_PROG_SIZE, MEM_PROG_DIR_LENGTH)

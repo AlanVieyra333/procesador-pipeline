@@ -24,6 +24,7 @@ BEGIN
         variable VAR_OPE_RESUTL: std_logic_vector((2 * LENGTH - 1) downto 0);
     BEGIN
         FLAGS <= (OTHERS => '0');
+        VAR_OPE_RESUTL := (OTHERS => '0');
         
         CASE OPE IS
             WHEN "000" => -- Suma
@@ -46,8 +47,10 @@ BEGIN
                 VAR_OPE_RESUTL(LENGTH - 1 DOWNTO 0) := A;
         END CASE;
         
-        IF to_integer(unsigned(VAR_OPE_RESUTL)) /= 0 THEN
+        IF to_integer(unsigned(VAR_OPE_RESUTL)) = 0 THEN
             FLAGS(0) <= '1';
+        ELSE
+            FLAGS(0) <= '0';
         END IF;
         
         OPE_RESUTL <= VAR_OPE_RESUTL;

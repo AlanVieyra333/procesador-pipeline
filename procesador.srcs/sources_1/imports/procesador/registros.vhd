@@ -28,6 +28,17 @@ ARCHITECTURE Behavioral OF REGISTROS IS
             O_DATA : OUT STD_LOGIC_VECTOR (LENGTH - 1 DOWNTO 0)
         );
     END COMPONENT;
+    
+    COMPONENT REGISTRO IS
+        GENERIC (
+            LENGTH : NATURAL := 32
+        );
+        PORT (
+            I_DATA : IN STD_LOGIC_VECTOR (LENGTH - 1 DOWNTO 0);
+            CLK, RST, WE : IN STD_LOGIC;
+            O_DATA : OUT STD_LOGIC_VECTOR (LENGTH - 1 DOWNTO 0)
+        );
+    END COMPONENT;
 
     COMPONENT DECODIFICADOR IS
         GENERIC (

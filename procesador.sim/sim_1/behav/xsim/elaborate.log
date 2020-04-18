@@ -29,7 +29,7 @@ Compiling architecture behavioral of entity xil_defaultlib.REGISTRO [\REGISTRO(l
 Compiling architecture behavioral of entity xil_defaultlib.CONTROL [control_default]
 Compiling architecture behavioral of entity xil_defaultlib.REGISTRO [\REGISTRO(length=3)\]
 Compiling architecture behavioral of entity xil_defaultlib.REGISTRO [\REGISTRO(length=2)\]
-Compiling architecture behavioral of entity xil_defaultlib.MEMORY_DATA [\MEMORY_DATA(word_length=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.MEMORY_DATA [memory_data_default]
 Compiling architecture behavioral of entity xil_defaultlib.DATAPATH [datapath_default]
 Compiling architecture bev of entity xil_defaultlib.tb
 Built simulation snapshot TB_behav

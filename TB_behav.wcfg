@@ -10,15 +10,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="768533333fs"></ZoomStartTime>
-      <ZoomEndTime time="782293334fs"></ZoomEndTime>
-      <Cursor1Time time="780000000fs"></Cursor1Time>
+      <ZoomStartTime time="36523000fs"></ZoomStartTime>
+      <ZoomEndTime time="37867001fs"></ZoomEndTime>
+      <Cursor1Time time="17000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="165"></NameColumnWidth>
-      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+      <NameColumnWidth column_width="185"></NameColumnWidth>
+      <ValueColumnWidth column_width="86"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="18" />
+   <WVObjectSize size="20" />
    <wvobject type="logic" fp_name="/TB/CLK">
       <obj_property name="ElementShortName">CLK</obj_property>
       <obj_property name="ObjectShortName">CLK</obj_property>
@@ -64,28 +64,84 @@
       <obj_property name="ObjectShortName">ALU_OPE_LENGTH</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/TB/DATA_PATH/P_IF_PC_DIR">
+      <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">P_IF_PC_DIR[9:0]</obj_property>
       <obj_property name="ObjectShortName">P_IF_PC_DIR[9:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">PC</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/TB/DATA_PATH/P_MEM_MEM_DATA_WE">
-      <obj_property name="ElementShortName">P_MEM_MEM_DATA_WE[0:0]</obj_property>
-      <obj_property name="ObjectShortName">P_MEM_MEM_DATA_WE[0:0]</obj_property>
+   <wvobject type="array" fp_name="/TB/DATA_PATH/PROGRAM_MEMORY/O_DATA">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">O_DATA[41:0]</obj_property>
+      <obj_property name="ObjectShortName">O_DATA[41:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="label">Instruccion</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/TB/DATA_PATH/MEM_DIR">
-      <obj_property name="ElementShortName">MEM_DIR[9:0]</obj_property>
-      <obj_property name="ObjectShortName">MEM_DIR[9:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   <wvobject type="logic" fp_name="/TB/DATA_PATH/PC_WE">
+      <obj_property name="ElementShortName">PC_WE</obj_property>
+      <obj_property name="ObjectShortName">PC_WE</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/TB/DATA_PATH/P_MEM_REG_DATA_R2">
-      <obj_property name="ElementShortName">P_MEM_REG_DATA_R2[31:0]</obj_property>
-      <obj_property name="ObjectShortName">P_MEM_REG_DATA_R2[31:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   <wvobject type="array" fp_name="/TB/DATA_PATH/PC_JUMP">
+      <obj_property name="ElementShortName">PC_JUMP[0:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_JUMP[0:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/TB/DATA_PATH/P_MEM_MEM_DATA_O">
-      <obj_property name="ElementShortName">P_MEM_MEM_DATA_O[31:0]</obj_property>
-      <obj_property name="ObjectShortName">P_MEM_MEM_DATA_O[31:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   <wvobject type="array" fp_name="/TB/DATA_PATH/P_ID_PC_JUMP">
+      <obj_property name="ElementShortName">P_ID_PC_JUMP[0:0]</obj_property>
+      <obj_property name="ObjectShortName">P_ID_PC_JUMP[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group3150">
+      <obj_property name="label">Instruccion reg dir</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/TB/DATA_PATH/P_INSTRUCTION">
+         <obj_property name="ElementShortName">P_INSTRUCTION[41:0]</obj_property>
+         <obj_property name="ObjectShortName">P_INSTRUCTION[41:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/TB/DATA_PATH/INSTRUCTION">
+         <obj_property name="ElementShortName">INSTRUCTION[41:0]</obj_property>
+         <obj_property name="ObjectShortName">INSTRUCTION[41:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/TB/DATA_PATH/P_EX_INST_REG_DIR">
+         <obj_property name="ElementShortName">P_EX_INST_REG_DIR[4:0]</obj_property>
+         <obj_property name="ObjectShortName">P_EX_INST_REG_DIR[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/TB/DATA_PATH/P_MEM_INST_REG_DIR">
+         <obj_property name="ElementShortName">P_MEM_INST_REG_DIR[4:0]</obj_property>
+         <obj_property name="ObjectShortName">P_MEM_INST_REG_DIR[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/TB/DATA_PATH/P_WB_INST_REG_DIR">
+         <obj_property name="ElementShortName">P_WB_INST_REG_DIR[4:0]</obj_property>
+         <obj_property name="ObjectShortName">P_WB_INST_REG_DIR[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group3144">
+      <obj_property name="label">Signals RAM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/TB/DATA_PATH/P_MEM_MEM_DATA_WE">
+         <obj_property name="ElementShortName">P_MEM_MEM_DATA_WE[0:0]</obj_property>
+         <obj_property name="ObjectShortName">P_MEM_MEM_DATA_WE[0:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/TB/DATA_PATH/MEM_DIR">
+         <obj_property name="ElementShortName">MEM_DIR[9:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM_DIR[9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/TB/DATA_PATH/P_MEM_REG_DATA_R2">
+         <obj_property name="ElementShortName">P_MEM_REG_DATA_R2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">P_MEM_REG_DATA_R2[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/TB/DATA_PATH/P_MEM_MEM_DATA_O">
+         <obj_property name="ElementShortName">P_MEM_MEM_DATA_O[31:0]</obj_property>
+         <obj_property name="ObjectShortName">P_MEM_MEM_DATA_O[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
    </wvobject>
    <wvobject type="group" fp_name="group20">
       <obj_property name="label">Register</obj_property>
@@ -139,6 +195,20 @@
          <obj_property name="ObjectShortName">Q[31:0]</obj_property>
          <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          <obj_property name="label">R6</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/TB/DATA_PATH/REG/\MEM_REG(7)\/REGX/Q">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">Q[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Q[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="label">R7</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/TB/DATA_PATH/REG/\MEM_REG(8)\/REGX/Q">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">Q[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Q[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="label">R8</obj_property>
       </wvobject>
    </wvobject>
    <wvobject type="array" fp_name="/TB/DATA_PATH/RAM/DATA">
@@ -201,127 +271,102 @@
       <wvobject type="array" fp_name="/TB/DATA_PATH/RAM/DATA[10]">
          <obj_property name="ElementShortName">[10][31:0]</obj_property>
          <obj_property name="ObjectShortName">[10][31:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/RAM/DATA[11]">
          <obj_property name="ElementShortName">[11][31:0]</obj_property>
          <obj_property name="ObjectShortName">[11][31:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/RAM/DATA[12]">
          <obj_property name="ElementShortName">[12][31:0]</obj_property>
          <obj_property name="ObjectShortName">[12][31:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/RAM/DATA[13]">
          <obj_property name="ElementShortName">[13][31:0]</obj_property>
          <obj_property name="ObjectShortName">[13][31:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/RAM/DATA[14]">
          <obj_property name="ElementShortName">[14][31:0]</obj_property>
          <obj_property name="ObjectShortName">[14][31:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/RAM/DATA[15]">
          <obj_property name="ElementShortName">[15][31:0]</obj_property>
          <obj_property name="ObjectShortName">[15][31:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/RAM/DATA[16]">
          <obj_property name="ElementShortName">[16][31:0]</obj_property>
          <obj_property name="ObjectShortName">[16][31:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/RAM/DATA[17]">
          <obj_property name="ElementShortName">[17][31:0]</obj_property>
          <obj_property name="ObjectShortName">[17][31:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/RAM/DATA[18]">
          <obj_property name="ElementShortName">[18][31:0]</obj_property>
          <obj_property name="ObjectShortName">[18][31:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/RAM/DATA[19]">
          <obj_property name="ElementShortName">[19][31:0]</obj_property>
          <obj_property name="ObjectShortName">[19][31:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/RAM/DATA[20]">
          <obj_property name="ElementShortName">[20][31:0]</obj_property>
          <obj_property name="ObjectShortName">[20][31:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/RAM/DATA[21]">
          <obj_property name="ElementShortName">[21][31:0]</obj_property>
          <obj_property name="ObjectShortName">[21][31:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/RAM/DATA[22]">
          <obj_property name="ElementShortName">[22][31:0]</obj_property>
          <obj_property name="ObjectShortName">[22][31:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/RAM/DATA[23]">
          <obj_property name="ElementShortName">[23][31:0]</obj_property>
          <obj_property name="ObjectShortName">[23][31:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/RAM/DATA[24]">
          <obj_property name="ElementShortName">[24][31:0]</obj_property>
          <obj_property name="ObjectShortName">[24][31:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/RAM/DATA[25]">
          <obj_property name="ElementShortName">[25][31:0]</obj_property>
          <obj_property name="ObjectShortName">[25][31:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/RAM/DATA[26]">
          <obj_property name="ElementShortName">[26][31:0]</obj_property>
          <obj_property name="ObjectShortName">[26][31:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/RAM/DATA[27]">
          <obj_property name="ElementShortName">[27][31:0]</obj_property>
          <obj_property name="ObjectShortName">[27][31:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/RAM/DATA[28]">
          <obj_property name="ElementShortName">[28][31:0]</obj_property>
          <obj_property name="ObjectShortName">[28][31:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/RAM/DATA[29]">
          <obj_property name="ElementShortName">[29][31:0]</obj_property>
          <obj_property name="ObjectShortName">[29][31:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/RAM/DATA[30]">
          <obj_property name="ElementShortName">[30][31:0]</obj_property>
          <obj_property name="ObjectShortName">[30][31:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/RAM/DATA[31]">
          <obj_property name="ElementShortName">[31][31:0]</obj_property>
          <obj_property name="ObjectShortName">[31][31:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/RAM/DATA[32]">
          <obj_property name="ElementShortName">[32][31:0]</obj_property>
          <obj_property name="ObjectShortName">[32][31:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/RAM/DATA[33]">
          <obj_property name="ElementShortName">[33][31:0]</obj_property>
          <obj_property name="ObjectShortName">[33][31:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/RAM/DATA[34]">
          <obj_property name="ElementShortName">[34][31:0]</obj_property>
          <obj_property name="ObjectShortName">[34][31:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/RAM/DATA[35]">
          <obj_property name="ElementShortName">[35][31:0]</obj_property>
