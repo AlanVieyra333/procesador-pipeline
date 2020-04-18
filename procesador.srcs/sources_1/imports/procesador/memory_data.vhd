@@ -26,6 +26,10 @@ BEGIN
     BEGIN
         IF RST = '1' THEN
             DATA <= (others => (others => '0'));
+            
+--            DATA(3) <= x"0000000a";
+--            DATA(4) <= x"00000005";
+--            DATA(5) <= x"00000006";
         ELSE
             O_DATA <= DATA(to_integer(unsigned(DIR)));
 
