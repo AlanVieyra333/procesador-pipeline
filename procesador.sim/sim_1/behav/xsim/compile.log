@@ -208,3 +208,53 @@ INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/procesador
 INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
 INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/procesador/procesador.srcs/sources_1/imports/procesador/memory_data.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_DATA'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'

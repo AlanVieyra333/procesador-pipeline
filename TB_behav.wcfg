@@ -10,13 +10,13 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="36523000fs"></ZoomStartTime>
-      <ZoomEndTime time="37867001fs"></ZoomEndTime>
-      <Cursor1Time time="17000000fs"></Cursor1Time>
+      <ZoomStartTime time="210818299fs"></ZoomStartTime>
+      <ZoomEndTime time="224338300fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="185"></NameColumnWidth>
-      <ValueColumnWidth column_width="86"></ValueColumnWidth>
+      <ValueColumnWidth column_width="82"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="20" />
    <wvobject type="logic" fp_name="/TB/CLK">
@@ -271,6 +271,7 @@
       <wvobject type="array" fp_name="/TB/DATA_PATH/RAM/DATA[10]">
          <obj_property name="ElementShortName">[10][31:0]</obj_property>
          <obj_property name="ObjectShortName">[10][31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="/TB/DATA_PATH/RAM/DATA[11]">
          <obj_property name="ElementShortName">[11][31:0]</obj_property>
