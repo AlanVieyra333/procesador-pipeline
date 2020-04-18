@@ -25,11 +25,7 @@ BEGIN
     MEM_LOAD : PROCESS (RST, DIR, WE)
     BEGIN
         IF RST = '1' THEN
-            --DATA <= (others => (others => '0'));
-            
-            DATA(3) <= x"0000000a"; -- 10
-            DATA(4) <= x"00000005"; -- 5
-            DATA(5) <= x"00000006"; -- 6
+            DATA <= (others => (others => '0'));
         ELSE
             O_DATA <= DATA(to_integer(unsigned(DIR)));
 
