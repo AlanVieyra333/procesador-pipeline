@@ -16,13 +16,14 @@ ENTITY CONTROL IS
     PORT (
         INST_OPE : IN STD_LOGIC_VECTOR (INST_OPE_LENGTH - 1 DOWNTO 0);
         RST, CLK : IN STD_LOGIC;
-        PC_ENABLE, PC_WE : OUT STD_LOGIC;
+        PC_ENABLE, PC_JUMP : OUT STD_LOGIC;
         REG_WE : OUT STD_LOGIC;
         REG_I_DATA_SEL : OUT STD_LOGIC_VECTOR (1 DOWNTO 0);
         ALU_OPE : OUT STD_LOGIC_VECTOR (ALU_OPE_LENGTH - 1 DOWNTO 0);
         MEMORY_DATA_WE : OUT STD_LOGIC;
         ALU_I_DATA_SEL : OUT STD_LOGIC;
-        MEM_DIR_SEL: OUT STD_LOGIC
+        MEM_DIR_SEL: OUT STD_LOGIC;
+        JUMP_SEL : OUT STD_LOGIC_VECTOR (1 DOWNTO 0)
     );
 END CONTROL;
 
@@ -47,25 +48,27 @@ BEGIN
             WHEN Qrst =>
 	            -- Valores por defecto.
                 PC_ENABLE <= '0';
-                PC_WE <= '0';
+                PC_JUMP <= '0';
                 REG_WE <= '0';
                 REG_I_DATA_SEL <= "00";
                 ALU_OPE <= (OTHERS => '0');
                 MEMORY_DATA_WE <= '0';
                 ALU_I_DATA_SEL <= '0';
                 MEM_DIR_SEL <= '0';
+                JUMP_SEL <= "00";
                 
 	            STATE_NEXT <= Qini;
             WHEN Qini =>
             	-- Valores por defecto.
                 PC_ENABLE <= '1';
-                PC_WE <= '0';
+                PC_JUMP <= '0';
                 REG_WE <= '0';
                 REG_I_DATA_SEL <= "00";
                 ALU_OPE <= (OTHERS => '0');
                 MEMORY_DATA_WE <= '0';
                 ALU_I_DATA_SEL <= '0';
                 MEM_DIR_SEL <= '0';
+                JUMP_SEL <= "00";
                 
                 STATE_NEXT <= Qini;
             	
@@ -114,10 +117,11 @@ BEGIN
                     	REG_I_DATA_SEL <= "01"; -- Gurdar en registro el dato de ALU.
                     WHEN "01010" => -- BNEI Rd, Rt, D - if(Rd != Rt) goto D
                     	ALU_OPE <= "001";
-                    	PC_WE <= '1';
+                    	PC_JUMP <= '1';
+                    	JUMP_SEL <= "01";
                     WHEN "01011" => -- B D - goto D
-                    	ALU_OPE <= "000";
-                    	PC_WE <= '1';
+                    	PC_JUMP <= '1';
+                    	JUMP_SEL <= "00";
                     WHEN "01100" => -- XOR
                     	ALU_OPE <= "100";
                     	REG_WE <= '1';
@@ -126,6 +130,10 @@ BEGIN
                     	ALU_OPE <= "111";
                     	REG_WE <= '1';
                     	REG_I_DATA_SEL <= "01";
+                    WHEN "01110" => -- BLTI Rd, Rt, D - if(Rd < Rt) goto D
+                    	ALU_OPE <= "001";
+                    	PC_JUMP <= '1';
+                    	JUMP_SEL <= "10";
                     WHEN OTHERS => -- NOP
                     	-- NOTHING.
             	END CASE;

@@ -25,10 +25,10 @@ Compiling architecture behavioral of entity xil_defaultlib.REGISTROS [registros_
 Compiling architecture behavioral of entity xil_defaultlib.REGISTRO [\REGISTRO(length=5)\]
 Compiling architecture behavioral of entity xil_defaultlib.REGISTRO [registro_default]
 Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
-Compiling architecture behavioral of entity xil_defaultlib.REGISTRO [\REGISTRO(length=1)\]
-Compiling architecture behavioral of entity xil_defaultlib.CONTROL [control_default]
-Compiling architecture behavioral of entity xil_defaultlib.REGISTRO [\REGISTRO(length=3)\]
 Compiling architecture behavioral of entity xil_defaultlib.REGISTRO [\REGISTRO(length=2)\]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL [control_default]
+Compiling architecture behavioral of entity xil_defaultlib.REGISTRO [\REGISTRO(length=1)\]
+Compiling architecture behavioral of entity xil_defaultlib.REGISTRO [\REGISTRO(length=3)\]
 Compiling architecture behavioral of entity xil_defaultlib.MEMORY_DATA [memory_data_default]
 Compiling architecture behavioral of entity xil_defaultlib.DATAPATH [datapath_default]
 Compiling architecture bev of entity xil_defaultlib.tb

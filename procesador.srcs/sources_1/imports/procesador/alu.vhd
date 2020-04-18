@@ -11,7 +11,7 @@ ENTITY ALU IS
         A, B : IN STD_LOGIC_VECTOR (LENGTH - 1 DOWNTO 0);
         OPE : IN STD_LOGIC_VECTOR (2 DOWNTO 0);
         RESULT_L : OUT STD_LOGIC_VECTOR (LENGTH - 1 DOWNTO 0);
-        FLAGS : OUT STD_LOGIC_VECTOR (0 DOWNTO 0)
+        FLAGS : OUT STD_LOGIC_VECTOR (1 DOWNTO 0)
     );
 END ALU;
 
@@ -49,8 +49,8 @@ BEGIN
         
         IF to_integer(unsigned(VAR_OPE_RESUTL)) = 0 THEN
             FLAGS(0) <= '1';
-        ELSE
-            FLAGS(0) <= '0';
+        ELSIF to_integer(unsigned(VAR_OPE_RESUTL)) < 0 THEN
+            FLAGS(1) <= '1';
         END IF;
         
         OPE_RESUTL <= VAR_OPE_RESUTL;
