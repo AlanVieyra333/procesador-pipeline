@@ -1,4 +1,4 @@
 Vivado Simulator 2018.3
 Time resolution is 1 ps
 Note: Test done. Open EPWave to see signals.
-Time: 21 ns  Iteration: 0  Process: /TB/line__65  File: /home/rossinc/Documents/alan/procesador/procesador.srcs/sim_1/imports/procesador/testbench.vhd
+Time: 21 ns  Iteration: 0  Process: /TB/line__65  File: /home/rossinc/Documents/alan/arqui/procesador/procesador.srcs/sim_1/imports/procesador/testbench.vhd

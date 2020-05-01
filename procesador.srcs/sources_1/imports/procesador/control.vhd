@@ -134,6 +134,18 @@ BEGIN
                     	ALU_OPE <= "001";
                     	PC_JUMP <= '1';
                     	JUMP_SEL <= "10";
+                    WHEN "01111" => -- ADDF Rd, Rt, Rs - Rd = Rt + Rs
+                    	ALU_OPE <= "000";
+                    	REG_WE <= '1';
+                    	REG_I_DATA_SEL <= "11"; -- Gurdar en registro el dato de ALU FP.
+                    WHEN "10000" => -- SUBF Rd, Rt, Rs - Rd = Rt - Rs
+                    	ALU_OPE <= "001";
+                    	REG_WE <= '1';
+                    	REG_I_DATA_SEL <= "11"; -- Gurdar en registro el dato de ALU FP.
+                    WHEN "10001" => -- MULF Rd, Rt, Rs - Rd = Rt * Rs
+                    	ALU_OPE <= "010";
+                    	REG_WE <= '1';
+                    	REG_I_DATA_SEL <= "11"; -- Gurdar en registro el dato de ALU FP.
                     WHEN OTHERS => -- NOP
                     	-- NOTHING.
             	END CASE;

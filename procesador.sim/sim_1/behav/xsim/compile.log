@@ -268,3 +268,73 @@ INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/procesador
 INFO: [VRFC 10-3107] analyzing entity 'MEMORY_DATA'
 INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/floating_point/floating_point.srcs/sources_1/new/abs.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'absol'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/procesador/procesador.srcs/sources_1/imports/procesador/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/floating_point/floating_point.srcs/sources_1/new/alu_fp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU_FP'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/floating_point/floating_point.srcs/sources_1/new/bit_shift.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bit_shift'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/floating_point/floating_point.srcs/sources_1/new/carry_decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'carry_decoder'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/procesador/procesador.srcs/sources_1/imports/procesador/control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CONTROL'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/procesador/procesador.srcs/sources_1/imports/procesador/datapath.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DATAPATH'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/procesador/procesador.srcs/sources_1/imports/procesador/decodificador.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DECODIFICADOR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/floating_point/floating_point.srcs/sources_1/new/extender.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'extender'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/floating_point/floating_point.srcs/sources_1/new/floating_point.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'floating_point'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/procesador/procesador.srcs/sources_1/imports/procesador/memory_data.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_DATA'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/procesador/procesador.srcs/sources_1/imports/procesador/pc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/procesador/procesador.srcs/sources_1/imports/procesador/registro.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'REGISTRO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/procesador/procesador.srcs/sources_1/new/registro_async.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'REGISTRO_ASYNC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/procesador/procesador.srcs/sources_1/imports/procesador/registros.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'REGISTROS'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/procesador/procesador.srcs/sim_1/imports/procesador/testbench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TB'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/procesador/procesador.srcs/sources_1/imports/procesador/datapath.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DATAPATH'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/procesador/procesador.srcs/sources_1/imports/procesador/control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CONTROL'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/procesador/procesador.srcs/sources_1/imports/procesador/datapath.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DATAPATH'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/procesador/procesador.srcs/sources_1/imports/procesador/alu_fp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU_FP'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/floating_point/floating_point.srcs/sources_1/new/carry_decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'carry_decoder'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/procesador/procesador.srcs/sources_1/imports/procesador/floating_point.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'floating_point'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/rossinc/Documents/alan/arqui/procesador/procesador.srcs/sources_1/imports/procesador/memory_program.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEMORY_PROG'
